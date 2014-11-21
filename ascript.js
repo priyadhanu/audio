@@ -1,17 +1,7 @@
 
 $('document').ready(function () {
     $('#play').click(function () {
-document.addEventListener("deviceready", onDeviceReady, false);
-	
-  });
-});  
-
-function onDeviceReady() {
-    playAudio();
-}
-
-function playAudio() {
-    // Play the audio file at url
+ // Play the audio file at url
     var my_media = new Media('/android_asset/www/testaudio.mp3',
         // success callback
         function () {
@@ -24,7 +14,10 @@ function playAudio() {
     );
     // Play audio */
     my_media.play();
-}
+	
+  });
+});  
+
 /* document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     playAudio();
@@ -43,5 +36,5 @@ function playAudio() {
         }
     );
     // Play audio */
-    my_media.play();
-}
+/*     my_media.play();
+} */
