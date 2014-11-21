@@ -1,11 +1,15 @@
+document.addEventListener("deviceready", onDeviceReady, false);
 $(document).ready(function() {
+alert("Document ready!");
   window.isphone = false;
     if(document.URL.indexOf("http://") === -1 
         && document.URL.indexOf("https://") === -1) {
         window.isphone = true;
+		alert("Setting window.isphone true!");
     }
 
     if( window.isphone ) {
+	alert("Adding event listener!");
         document.addEventListener("deviceready", onDeviceReady, false);
     } else {
         onDeviceReady();
@@ -13,6 +17,7 @@ $(document).ready(function() {
 });
 
 function onDeviceReady() {
+alert("Inside onDeviceReady().");
     playAudio();
 }	
 
