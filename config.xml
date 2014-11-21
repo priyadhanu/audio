@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "fi.metropolia.priyadap.audio"
+        versionCode="1" 
+        version   = "1.0.0">
+    <name>PhoneGap Audio</name>
+    <description>
+        test PhoneGap Service 
+    </description>
+    <author href="http://user.metropolia.fi/~priyadap/" email="priyadarshini.pailaje@metropolia.fi">
+        priya 
+    </author>
+	<icon src="icon.png" />
+	<gap:plugin name="org.apache.cordova.media" version="0.2.8" />
+</widget>
